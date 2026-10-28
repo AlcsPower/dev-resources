@@ -7,7 +7,7 @@
 ## 📌 Tabla de Contenidos
 
 - [🎬 Animación & Interactividad](#-animación--interactividad)
-- [🎨 Iconos & Activos Visuales](#-iconos--activos-visuales)
+- [🎨 Iconos, Avatares & Activos Visuales](#-iconos-avatares--activos-visuales)
 - [🧩 Componentes & Frameworks UI](#-componentes--frameworks-ui)
 - [🛠️ Utilidades & Herramientas](#️-utilidades--herramientas)
 - [📝 Guía para Agregar Recursos](#-guía-para-agregar-recursos)
@@ -38,7 +38,7 @@ Motor de animación en JavaScript extremadamente ligero, potente y con una API l
 
 ---
 
-## 🎨 Iconos & Activos Visuales
+## 🎨 Iconos, Avatares & Activos Visuales
 
 ### [4000+ Free High-quality Animated Icons](https://animatedicons.co/)
 > *Colección premium y gratuita de iconos animados para interfaces web y móviles.*
@@ -55,6 +55,38 @@ Extenso catálogo interactivo con más de 4,000 iconos vectoriales animados orga
 - **Integración sugerida:**
   - Integrable directamente mediante reproductores Lottie como `lottie-web` o `@dotlottie/player-component`.
 - **Etiquetas:** `Icons` `Animated Icons` `Lottie` `Microinteractions` `UI/UX Assets`
+
+---
+
+### [blobatar](https://blobatar.dev/)
+> *Deterministic geometric blobatars* · [Repositorio GitHub](https://github.com/Alain00/blobatar)
+
+Generador de avatares geométricos deterministas ultraligero (~4.4 KB gzipped) y con cero dependencias. A partir de cualquier cadena de texto (nombre de usuario, correo electrónico, ID o hash), produce un avatar SVG único, reproducible y visualmente orgánico con paletas cromáticas y formas geométricas balanceadas.
+
+- **Categoría:** Generador de avatares deterministas / Gráficos SVG
+- **Licencia:** MIT (Open Source)
+- **Formatos / Entornos:** Vanilla JS / TS, React (`@blobatar/react`), Vue 3 (`@blobatar/vue`), Svelte (`@blobatar/svelte`), Solid (`@blobatar/solid`), Preact (`@blobatar/preact`), React Native (`@blobatar/react-native`)
+- **Casos de uso ideales:**
+  - Avatares por defecto (*fallbacks*) en perfiles de usuario cuando no hay foto de perfil cargada.
+  - Identificadores visuales automáticos en sistemas de comentarios, chats o registros de auditoría.
+  - Representación visual de usuarios en plataformas SaaS, paneles administrativos y foros.
+- **Instalación rápida:**
+  ```bash
+  # Core
+  npm install blobatar
+
+  # O con adaptador para React
+  npm install blobatar @blobatar/react
+  ```
+- **Ejemplo rápido (React):**
+  ```tsx
+  import { Blobatar } from "@blobatar/react";
+
+  export function UserAvatar({ email }: { email: string }) {
+    return <Blobatar name={email} size={48} />;
+  }
+  ```
+- **Etiquetas:** `Avatars` `SVG` `Deterministic` `Zero Dependencies` `React` `Vue` `Svelte` `UI/UX`
 
 ---
 

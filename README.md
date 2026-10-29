@@ -8,6 +8,7 @@
 
 - [🎬 Animación & Interactividad](#-animación--interactividad)
 - [🎨 Iconos, Avatares & Activos Visuales](#-iconos-avatares--activos-visuales)
+- [🤖 AI Agent Skills & Developer Rules](#-ai-agent-skills--developer-rules)
 - [🧩 Componentes & Frameworks UI](#-componentes--frameworks-ui)
 - [🛠️ Utilidades & Herramientas](#️-utilidades--herramientas)
 - [📝 Guía para Agregar Recursos](#-guía-para-agregar-recursos)
@@ -87,6 +88,61 @@ Generador de avatares geométricos deterministas ultraligero (~4.4 KB gzipped) y
   }
   ```
 - **Etiquetas:** `Avatars` `SVG` `Deterministic` `Zero Dependencies` `React` `Vue` `Svelte` `UI/UX`
+
+---
+
+## 🤖 AI Agent Skills & Developer Rules
+
+### [Ponytail](https://github.com/DietrichGebert/ponytail)
+> *Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.* · [Repositorio GitHub](https://github.com/DietrichGebert/ponytail)
+
+Conjunto de reglas y habilidades para agentes de codificación de IA (Claude Code, Cursor, Windsurf, Antigravity, Copilot CLI, etc.) centrado en el minimalismo radical y la prevención de sobre-ingeniería. Obliga al agente a seguir una estricta "escalera de minimalismo": cuestionar si el código realmente necesita existir (YAGNI), reutilizar código existente en el repositorio, usar la librería estándar o APIs nativas de la plataforma, y jamás introducir dependencias externas innecesarias para resolver pocas líneas de lógica.
+
+- **Categoría:** AI Agent Skill / Developer Ruleset / Anti-Bloat
+- **Licencia:** MIT (Open Source)
+- **Entornos soportados:** Claude Code, Cursor (`.cursor/rules/`), Windsurf, Cline (`.clinerules/`), Antigravity, Copilot CLI, Gemini CLI
+- **Niveles de intensidad:**
+  - `/ponytail lite`: Minimalismo moderado.
+  - `/ponytail full` (default): Enfoque pragmático de desarrollador senior.
+  - `/ponytail ultra`: Cero tolerancia a abstracciones especulativas.
+- **Habilidades compañeras:** Incluye `ponytail-review`, un revisor enfocado exclusivamente en detectar sobreingeniería y sugerir código que puede eliminarse.
+- **Instalación rápida:**
+  ```bash
+  # Para Claude Code
+  /plugin marketplace add DietrichGebert/ponytail
+  /plugin install ponytail@ponytail
+
+  # Para Copilot CLI
+  copilot plugin marketplace add DietrichGebert/ponytail
+  copilot plugin install ponytail@ponytail
+  ```
+- **Etiquetas:** `AI Skills` `Senior Dev Mindset` `YAGNI` `Code Review` `Clean Code` `Anti-Bloat`
+
+---
+
+### [Skills for Designers and Engineers (Emil Kowalski)](https://github.com/emilkowalski/skills)
+> *Curated skills for designers and engineers who want high-taste UI and animation from AI agents.* · [Repositorio GitHub](https://github.com/emilkowalski/skills)
+
+Colección de habilidades especializadas de diseño e ingeniería frontend creadas por Emil Kowalski (autor de *Sonner*, *Vaul* y referente en microinteracciones y diseño de producto). Enseña y calibra el "buen gusto" de los agentes de IA al diseñar interfaces y animaciones de alta fidelidad, corrigiendo errores comunes como duraciones lentas, funciones de aceleración incorrectas (`ease-in` en entradas) o manipulación costosa de propiedades de layout.
+
+- **Categoría:** AI Agent Skills / Design Engineering / Microinteracciones & Motion
+- **Licencia:** MIT (Open Source)
+- **Entornos soportados:** Claude Code, Cursor, Windsurf, Antigravity, CLI Agents
+- **Módulos y habilidades destacadas:**
+  - `emil-design-eng`: Filosofía de ingeniería de diseño, decisiones UI con criterio estético y arquitectura de componentes.
+  - `animate`: Creación de animaciones fluidas desde cero, curvas cubic-bezier correctas y tiempos sub-300ms.
+  - `animate-expo`: Optimizado para React Native y Expo (gestos fluidos, transiciones compartidas y ejecución fuera del hilo JS).
+  - `review-animations`: Auditoría implacable de código de animación existente para detectar transiciones lentas o innecesarias.
+  - `apple-design`: Principios de diseño e interacción al estilo Apple (física, resortes, materiales y feedback táctil).
+- **Instalación rápida:**
+  ```bash
+  # Instalar la colección completa
+  npx skills@latest add emilkowalski/skills
+
+  # O instalar una habilidad específica (ej. apple-design)
+  npx skills add emilkowalski/skills --skill apple-design
+  ```
+- **Etiquetas:** `AI Skills` `Design Engineering` `UI/UX` `Microinteractions` `Animations` `Motion Design` `Apple Design`
 
 ---
 
